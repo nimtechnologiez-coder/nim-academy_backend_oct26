@@ -264,26 +264,21 @@
         </form>
 
         <!-- Credentials Hint -->
-        <div class="creds-box">
-            <div class="creds-title">⚡ Admin Superuser Credentials</div>
-            <div>Username: <span class="creds-code">admin</span> &nbsp;|&nbsp; Password: <span
-                    class="creds-code">admin123</span></div>
-        </div>
-    </div>
 
-    <script>
-        function togglePassword() {
-            const passInput = document.getElementById('password');
-            const toggleBtn = document.querySelector('.toggle-btn');
-            if (passInput.type === 'password') {
-                passInput.type = 'text';
-                toggleBtn.innerText = 'Hide';
-            } else {
-                passInput.type = 'password';
-                toggleBtn.innerText = 'Show';
+
+        <script>
+            function togglePassword() {
+                const passInput = document.getElementById('password');
+                const toggleBtn = document.querySelector('.toggle-btn');
+                if (passInput.type === 'password') {
+                    passInput.type = 'text';
+                    toggleBtn.innerText = 'Hide';
+                } else {
+                    passInput.type = 'password';
+                    toggleBtn.innerText = 'Show';
+                }
             }
-        }
-    </script>
+        </script>
 
 </body>
 

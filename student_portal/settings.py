@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-043aul^my&c2wkquypx7)nz_=c72of)$=j^7r5e9igt@(-4!nu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'nim-academy-backend-oct26.onrender.com', 'localhost', '127.0.0.1']
 
 
 import os
@@ -57,6 +57,12 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://nim-academy-backend-oct26.onrender.com',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+]
 
 ROOT_URLCONF = 'student_portal.urls'
 
